@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
-    <link rel="stylesheet" href="/main.css" />
+    <%- include('partials/head')%>
   </head>
   <body>
     <%- include('partials/navigation')%>
 
-    <h1>Hola mundo</h1>
+    <!-- Main Content -->
+
+    <header
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="/img/9198252.png" alt="" class="w-50" />
+        <h1 class="display-1 my-5 text-uppercase fw-bold">Mateo Donino</h1>
+        <a href="/about" class="btn btn-primary w-25">About</a>
+      </div>
+    </header>
 
     <%- include('partials/footer')%>
   </body>
